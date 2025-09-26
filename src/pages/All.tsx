@@ -1,10 +1,5 @@
-import { useState, useEffect } from 'react';
-import Loading from '../components/Loading';
-import ErrorComponent from '../components/Login';
 import { Link } from 'react-router-dom';
 import blogsData from '../../data/blogs.json';
-import usersData from '../../data/users.json';
-
 export interface Blog {
     id: number;
     user_id: number;
@@ -28,7 +23,7 @@ export const getReadby = (userId: number) => {
 
 const All = () => {
 
-    const [blogs, setBlogs] = useState<Blog[]>(blogsData);
+    const blogs = blogsData as Blog[]
 
     return (
         <div className="min-h-screen bg-gray-100 py-8">

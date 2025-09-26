@@ -53,13 +53,16 @@ const BlogSection = ({ first_name, userId, last_name, job, profile_picture, crea
                     <p className="lead">{description}</p>
                     <p>{content_text}</p>
 
-                    <p>Some pictures of new house built by Ashriya Nirman Sewa:</p>
+                    {id === 44 &&
+                        <>
+                            <p>Some pictures of new house built by Ashriya Nirman Sewa:</p>
 
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                        <img src="../first.jpg" alt="Random" className="my-4 rounded-lg" />
-                        <img src="../second.jpg" alt="Random" className="my-4 rounded-lg" />
-                        <img src="../third.jpg" alt="Random" className="my-4 rounded-lg" />
-                    </div>
+                            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                                <img src="../first.jpg" alt="Random" className="my-4 rounded-lg" />
+                                <img src="../second.jpg" alt="Random" className="my-4 rounded-lg" />
+                                <img src="../third.jpg" alt="Random" className="my-4 rounded-lg" />
+                            </div>
+                        </>}
 
                     <p className='font-light'>Read by: <span className='font-semibold'>{(getReadby(userId) * 1000).toLocaleString()}</span> people</p>
 

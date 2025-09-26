@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Signup = () => {
     return (
         <div className="flex min-h-full flex-col justify-center px-6 lg:px-8 pb-12">

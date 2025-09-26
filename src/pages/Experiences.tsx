@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
 import blogsData from '../../data/blogs.json';
 
-import { getReadby, type Blog } from './All';
+import { getReadby } from './All';
 import { Link } from 'react-router-dom';
 
 const Experiences = () => {
 
-    const [blogs, setBlogs] = useState<Blog[]>(blogsData.filter(blog => blog.category === 'love' || blog.category === 'gaming'));
+    const blogs = blogsData.filter(blog => blog.category === 'love' || blog.category === 'gaming');
 
     return (
         <div className="min-h-screen bg-gray-100 py-8">

@@ -25,7 +25,7 @@ const Comments = ({ blogId }: Commentprops) => {
     const comments = commentData.slice(0, blogId % 4);
 
     const getComments = () => {
-        if (blogId % 5 === 0) {
+        if (blogId % 2 === 0) {
             return <div>
                 <p className="text-gray-600">No comments yet. Be the first to comment!</p>
             </div>; // or some loading indicator
@@ -40,8 +40,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                 className="mr-2 w-6 h-6 rounded-full"
                                 src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                                 alt="Bonnie Green" />Elena Sth.</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-03-12"
-                                title="March 12th, 2022">June. 11, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">June. 11, 2025</p>
                         </div>
                         <button id="dropdownComment3Button" data-dropdown-toggle="dropdownComment3"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -89,8 +88,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Sam Shaha</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
-                                title="February 12th, 2022">Aug. 29, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Aug. 29, 2025</p>
                         </div>
                         <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -138,8 +136,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Raju Nepal</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-08"
-                                title="February 8th, 2022">Aug. 8, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Aug. 8, 2025</p>
                         </div>
                         <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -187,8 +184,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Sam Shaha</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
-                                title="February 12th, 2022">Aug. 10, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Aug. 10, 2025</p>
                         </div>
                         <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -236,8 +232,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Sony Limbo</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-08"
-                                title="February 8th, 2022">July. 19, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">July. 19, 2025</p>
                         </div>
                         <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -285,8 +280,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Sam Shaha</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
-                                title="February 12th, 2022">Jul. 21, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Jul. 21, 2025</p>
                         </div>
                         <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -334,8 +328,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 BJay Sharma</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
-                                title="February 12th, 2022">Jul. 23, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">Jul. 23, 2025</p>
                         </div>
                         <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -385,8 +378,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                 className="mr-2 w-6 h-6 rounded-full"
                                 src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                                 alt="Helene Engels" />Rupa Dhakal</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-06-23"
-                                title="June 23rd, 2022">May. 05, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">May. 05, 2025</p>
                         </div>
                         <button id="dropdownComment4Button" data-dropdown-toggle="dropdownComment4"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -433,8 +425,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Hari Mahat</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-06-23"
-                                title="June 23rd, 2022">April. 30, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">April. 30, 2025</p>
                         </div>
                         <button id="dropdownComment4Button" data-dropdown-toggle="dropdownComment4"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -481,8 +472,7 @@ const Comments = ({ blogId }: Commentprops) => {
                             <p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
                                 <DefaultAvatar />
                                 Aman Shrestha</p>
-                            <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-06-23"
-                                title="June 23rd, 2022">April. 09, 2025</time></p>
+                            <p className="text-sm text-gray-600 dark:text-gray-400">April. 09, 2025</p>
                         </div>
                         <button id="dropdownComment4Button" data-dropdown-toggle="dropdownComment4"
                             className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -527,11 +517,11 @@ const Comments = ({ blogId }: Commentprops) => {
             </>
         }
 
-        else if (blogId % 3 === 0) {
+        else if (blogId % 3 === 0 && blogId % 5 === 0) {
             return (
                 <>
                     {comments.map((comment, index) => (
-                        <div>
+                        <div key={index}>
                             <article className="p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900">
                                 <footer className="flex justify-between items-center mb-2">
                                     <div className="flex items-center">
@@ -539,8 +529,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                             className="mr-2 w-6 h-6 rounded-full"
                                             src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                                             alt="Michael Gough" />{comment.name}</p>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-08"
-                                            title="February 8th, 2022">{comment.date}</time></p>
+                                        <p className="text-sm text-gray-600 dark:text-gray-400">{comment.date}</p>
                                     </div>
                                     <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
                                         className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -597,8 +586,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                     className="mr-2 w-6 h-6 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                                     alt="Michael Gough" />Michael Gough</p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-08"
-                                    title="February 8th, 2022">Feb. 8, 2022</time></p>
+                                <p className="text-sm text-gray-600 dark:text-gray-400">Feb. 8, 2022</p>
                             </div>
                             <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
                                 className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -648,8 +636,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                     className="mr-2 w-6 h-6 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                                     alt="Jese Leos" />Jese Leos</p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
-                                    title="February 12th, 2022">Feb. 12, 2022</time></p>
+                                <p className="text-sm text-gray-600 dark:text-gray-400">Feb. 12, 2022</p>
                             </div>
                             <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
                                 className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -697,8 +684,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                     className="mr-2 w-6 h-6 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                                     alt="Bonnie Green" />Bonnie Green</p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-03-12"
-                                    title="March 12th, 2022">Mar. 12, 2022</time></p>
+                                <p className="text-sm text-gray-600 dark:text-gray-400">Mar. 12, 2022</p>
                             </div>
                             <button id="dropdownComment3Button" data-dropdown-toggle="dropdownComment3"
                                 className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -746,8 +732,7 @@ const Comments = ({ blogId }: Commentprops) => {
                                     className="mr-2 w-6 h-6 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                                     alt="Helene Engels" />Helene Engels</p>
-                                <p className="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-06-23"
-                                    title="June 23rd, 2022">Jun. 23, 2022</time></p>
+                                <p className="text-sm text-gray-600 dark:text-gray-400">Jun. 23, 2022</p>
                             </div>
                             <button id="dropdownComment4Button" data-dropdown-toggle="dropdownComment4"
                                 className="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-50 dark:text-gray-400 dark:bg-gray-900 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
