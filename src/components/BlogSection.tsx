@@ -41,7 +41,7 @@ const BlogSection = ({ first_name, userId, last_name, job, profile_picture, crea
                                     <p className="text-base text-gray-500 dark:text-gray-400">
                                         <time className="text-sm font-light" dateTime={created_at}>
                                             {
-                                                getDate(created_at, id % 12)
+                                                (id === 44) ? new Date("2025-04-27").toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : getDate(created_at, id % 12)
                                             }
                                         </time>
                                     </p>
